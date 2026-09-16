@@ -15,7 +15,7 @@ you'd have to stand up yourself.
 
 - A Page Object Model covering a real four-screen flow (login, menu,
   checkout, confirmation), tested across three locale/market projects
-  (US, UK, DE) in parallel.
+  (US, UK, DE, PT, CA) in parallel.
 - Deterministic, non-time-dependent tests for time-of-day-sensitive
   behavior (the breakfast/all-day daypart banner) and a feature flag (the
   combo upsell badge), using explicit overrides instead of relying on the

@@ -57,4 +57,24 @@ test.describe('End-to-end ordering flow', () => {
 
     await menuPage.expectComboBadgeVisible('de-ad-01', true);
   });
+
+    test('PT customer orders an all-day item with market-specific pricing', async ({ page }) => {
+    const loginPage = new LoginPage(page);
+    const menuPage = new MenuPage(page);
+
+    await loginPage.loginAs('7712', '2468', 'PT');
+    await menuPage.gotoForMarket('PT', { daypart: 'allday' });
+    await menuPage.addItemToOrder('pt-ad-01');
+    await menuPage.expectCartTotal(formatMoney(4.49, '€'));
+  });
+
+  test('CA customer orders an all-day item with market-specific pricing', async ({ page }) => {
+    const loginPage = new LoginPage(page);
+    const menuPage = new MenuPage(page);
+
+    await loginPage.loginAs('3390', '1357', 'CA');
+    await menuPage.gotoForMarket('CA', { daypart: 'allday' });
+    await menuPage.addItemToOrder('ca-ad-01');
+    await menuPage.expectCartTotal(formatMoney(5.99, '$'));
+  });
 });
