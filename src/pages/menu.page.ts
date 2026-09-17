@@ -75,4 +75,9 @@ export class MenuPage extends BasePage {
       await expect(this.testId('checkout-button')).toBeDisabled();
     }
   }
+
+    async addItemToOrderByName(name: string): Promise<void> {//
+    const card = this.page.locator('.menu-item', { hasText: name });
+    await card.getByRole('button', { name: 'Add to order' }).click();
+  }
 }

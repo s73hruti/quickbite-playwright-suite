@@ -12,6 +12,7 @@ const PORT = Number(process.env.STATIC_SERVER_PORT ?? 4173);
 
 export default defineConfig({
   testDir: './tests',
+  testMatch: '**/*.ts',
   outputDir: './test-results',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
@@ -34,6 +35,7 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     locale: process.env.LOCALE ?? 'en-US',
+    //launchOptions: { slowMo: 1000 }, //use when debugging to slow down the execution of the tests
     // Optional escape hatch for environments with their own Chromium build
     // (locked-down CI images, corporate images, etc.) instead of the one
     // `npx playwright install` downloads.
