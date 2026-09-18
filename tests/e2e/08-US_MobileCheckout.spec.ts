@@ -31,7 +31,7 @@ import { ConfirmationPage } from '../../src/pages/confirmation.page.js';
 import { formatMoney } from '../../src/utils/money.js';
 
 test.describe('US Mobile Payment E2E Test', () => {
-  test('US customer completes checkout with mobile payment @TC-E2E-08', async ({ page }) => {
+  test('US customer completes checkout with mobile payment @TC-E2E-08 @US', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
     const checkoutPage = new CheckoutPage(page);

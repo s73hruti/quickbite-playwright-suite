@@ -20,7 +20,7 @@ import { LoginPage } from '../../src/pages/login.page.js';
 import { MenuPage } from '../../src/pages/menu.page.js';
 
 test.describe('Menu Render Smoke Test', () => {
-  test('menu loads with at least one item visible @smoke @TC-SMOKE-03', async ({ page }) => {
+  test('menu loads with at least one item visible @smoke @TC-SMOKE-03 @US @UK @DE @PT @CA', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
 

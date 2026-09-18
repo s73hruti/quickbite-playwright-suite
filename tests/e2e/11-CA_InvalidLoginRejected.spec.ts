@@ -24,7 +24,7 @@ import { test, expect } from '@playwright/test';
 import { LoginPage } from '../../src/pages/login.page.js';
 
 test.describe('CA Invalid Login E2E Test', () => {
-  test('malformed PIN is rejected on CA @TC-E2E-11', async ({ page }) => {
+  test('malformed PIN is rejected on CA @TC-E2E-11 @CA', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
     await test.step('attempt login with a malformed PIN', async () => {

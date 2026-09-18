@@ -23,7 +23,7 @@ import { LoginPage } from '../../src/pages/login.page.js';
 import { MenuPage } from '../../src/pages/menu.page.js';
 
 test.describe('Checkout State E2E Test', () => {
-  test('checkout enables once an item is added to the cart @TC-E2E-04', async ({ page }) => {
+  test('checkout enables once an item is added to the cart @TC-E2E-04 @DE', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
 

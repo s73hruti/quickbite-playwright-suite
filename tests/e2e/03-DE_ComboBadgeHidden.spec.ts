@@ -21,7 +21,7 @@ import { LoginPage } from '../../src/pages/login.page.js';
 import { MenuPage } from '../../src/pages/menu.page.js';
 
 test.describe('DE Combo Badge E2E Test', () => {
-  test('combo badge is hidden when the feature flag is disabled @TC-E2E-03', async ({ page }) => {
+  test('combo badge is hidden when the feature flag is disabled @TC-E2E-03 @DE', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
 

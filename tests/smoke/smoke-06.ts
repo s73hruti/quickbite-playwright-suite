@@ -32,7 +32,7 @@ import { ConfirmationPage } from '../../src/pages/confirmation.page.js';
 import { formatMoney } from '../../src/utils/money.js';
 
 test.describe('Cross-Market Smoke Test', () => {
-  test('DE customer orders an all-day item and pays by card @smoke @TC-SMOKE-06', async ({ page }) => {
+  test('DE customer orders an all-day item and pays by card @smoke @TC-SMOKE-06 @US @UK @DE @PT @CA', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
     const checkoutPage = new CheckoutPage(page);

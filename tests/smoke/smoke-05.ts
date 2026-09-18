@@ -25,7 +25,7 @@ import { test, expect } from '@playwright/test';
 import { LoginPage } from '../../src/pages/login.page.js';
 
 test.describe('Invalid Login Smoke Test', () => {
-  test('malformed PIN is rejected on UK @smoke @TC-SMOKE-05', async ({ page }) => {
+  test('malformed PIN is rejected on UK @smoke @TC-SMOKE-05 @US @UK @DE @PT @CA', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
     await test.step('attempt login with a malformed PIN', async () => {

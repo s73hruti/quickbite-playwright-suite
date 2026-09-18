@@ -30,7 +30,7 @@ import { ConfirmationPage } from '../../src/pages/confirmation.page.js';
 import { formatMoney } from '../../src/utils/money.js';
 
 test.describe('CA Full Checkout E2E Test', () => {
-  test('CA customer completes a full checkout through confirmation @TC-E2E-06', async ({ page }) => {
+  test('CA customer completes a full checkout through confirmation @TC-E2E-06 @CA', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
     const checkoutPage = new CheckoutPage(page);

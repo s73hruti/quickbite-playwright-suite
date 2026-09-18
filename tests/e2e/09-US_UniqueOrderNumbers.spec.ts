@@ -31,7 +31,7 @@ import { ConfirmationPage } from '../../src/pages/confirmation.page.js';
 import { formatMoney } from '../../src/utils/money.js';
 
 test.describe('Unique Order Number E2E Test', () => {
-  test('two consecutive orders receive different order numbers @TC-E2E-09', async ({ page }) => {
+  test('two consecutive orders receive different order numbers @TC-E2E-09 @US', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
     const checkoutPage = new CheckoutPage(page);

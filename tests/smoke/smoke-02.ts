@@ -30,7 +30,7 @@ import { ConfirmationPage } from '../../src/pages/confirmation.page.js';
 import { formatMoney } from '../../src/utils/money.js';
 
 test.describe('Card Payment Smoke Test', () => {
-  test('US customer orders an all-day item and pays by card @smoke @TC-SMOKE-02', async ({ page }) => {
+  test('US customer orders an all-day item and pays by card @smoke @TC-SMOKE-02 @US @UK @DE @PT @CA', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
     const checkoutPage = new CheckoutPage(page);

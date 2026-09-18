@@ -28,7 +28,7 @@ import { ConfirmationPage } from '../../src/pages/confirmation.page.js';
 import { formatMoney } from '../../src/utils/money.js';
 
 test.describe('Mobile Payment Smoke Test', () => {
-  test('DE attendant completes a breakfast order and pays with mobile payment @smoke @TC-SMOKE-04', async ({ page }) => {
+  test('DE attendant completes a breakfast order and pays with mobile payment @smoke @TC-SMOKE-04 @US @UK @DE @PT @CA', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
     const checkoutPage = new CheckoutPage(page);

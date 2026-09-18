@@ -20,7 +20,7 @@ import { LoginPage } from '../../src/pages/login.page.js';
 import { MenuPage } from '../../src/pages/menu.page.js';
 
 test.describe('Valid Login E2E Test', () => {
-  test('valid store ID and PIN logs the attendant into the menu screen @TC-E2E-12', async ({ page }) => {
+  test('valid store ID and PIN logs the attendant into the menu screen @TC-E2E-12 @US', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
 

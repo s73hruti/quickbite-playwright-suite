@@ -22,7 +22,7 @@ import { LoginPage } from '../../src/pages/login.page.js';
 import { MenuPage } from '../../src/pages/menu.page.js';
 
 test.describe('PT Combo Badge E2E Test', () => {
-  test('combo badge appears when the feature flag is enabled @TC-E2E-13', async ({ page }) => {
+  test('combo badge appears when the feature flag is enabled @TC-E2E-13 @PT', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
 

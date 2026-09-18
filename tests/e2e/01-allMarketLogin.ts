@@ -39,7 +39,7 @@ const marketCredentials: { market: Market; storeId: string; pin: string }[] = [
 ];
 
 test.describe('All-Markets Login E2E Test', () => {
-  test('all 5 supported markets can log in successfully @TC-E2E-01', async ({ page }) => {
+  test('all 5 supported markets can log in successfully @TC-E2E-01 @US @UK @DE @PT @CA', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
     for (const { market, storeId, pin } of marketCredentials) {

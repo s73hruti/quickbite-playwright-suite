@@ -23,7 +23,7 @@ import { LoginPage } from '../../src/pages/login.page.js';
 import { MenuPage } from '../../src/pages/menu.page.js';
 
 test.describe('Daypart Banner Smoke Test', () => {
-  test('breakfast daypart banner shows before 11am and hides the all-day combo badge @smoke @TC-SMOKE-07', async ({ page }) => {
+  test('breakfast daypart banner shows before 11am and hides the all-day combo badge @smoke @TC-SMOKE-07 @US @UK @DE @PT @CA', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
 

@@ -32,7 +32,7 @@ import {ConfirmationPage} from '../../src/pages/confirmation.page.js';
 
 test.describe('Payment Smoke Test', () =>
 {
-test('UK attendant completes a breakfast order and pays with cash @smoke @TC-SMOKE-01',async ({page}) =>
+test('UK attendant completes a breakfast order and pays with cash @smoke @TC-SMOKE-01 @US @UK @DE @PT @CA',async ({page}) =>
 {
     const loginPage = new LoginPage(page); //why passing page
     const menuPage = new MenuPage(page);

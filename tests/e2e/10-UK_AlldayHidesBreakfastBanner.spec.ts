@@ -21,7 +21,7 @@ import { LoginPage } from '../../src/pages/login.page.js';
 import { MenuPage } from '../../src/pages/menu.page.js';
 
 test.describe('UK All-Day Daypart E2E Test', () => {
-  test('all-day daypart hides the breakfast banner @TC-E2E-10', async ({ page }) => {
+  test('all-day daypart hides the breakfast banner @TC-E2E-10 @UK', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const menuPage = new MenuPage(page);
 
