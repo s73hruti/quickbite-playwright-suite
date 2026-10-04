@@ -88,7 +88,7 @@ export default defineConfig({
   outputDir: './test-results',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
+  retries: 0, // Disable retries so CI failures are visible.
   workers: process.env.CI ? 4 : undefined,
   reporter: [
     ['list'],
